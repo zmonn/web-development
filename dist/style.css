@@ -130,7 +130,7 @@ body {
   background: url(res/bg_medium2.png);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  
   display: flex;
   justify-content: center;
   
@@ -200,5 +200,8 @@ font-size: 14rem;
 @media (min-width: 44em) {
   .columns {
     grid-auto-flow: column;
+  }
+  .hero-background {
+    background-size: contain;
   }
 }
