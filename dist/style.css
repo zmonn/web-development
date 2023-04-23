@@ -104,11 +104,13 @@ select {
 
 /*UTILITY CLASSES*/
 
+html {
+  overflow-x: hidden;
+}
 
 body {
   font-family: var(--ff-primary);
   font-size: 1rem;
-  overflow-x: hidden;
 
 }
 
@@ -121,7 +123,8 @@ body {
 
 .container {
   border: 1px solid;
-  width: min(75rem, 90%); /*about 1300px or 90%*/
+  width: min(75rem, 90%);
+  /*about 1300px or 90%*/
   padding: 0 5rem;
   margin-inline: auto;
   /*centers page for elements with a fixed width like this one*/
@@ -181,7 +184,7 @@ body {
   font-family: 'handwritten';
   font-weight: bold;
   line-height: 11rem;
-font-size: 14rem;
+  font-size: 14rem;
   color: white;
 }
 
@@ -194,6 +197,7 @@ font-size: 14rem;
   .columns {
     grid-auto-flow: column;
   }
+
   .hero-background {
     background-size: contain;
   }
