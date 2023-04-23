@@ -57,10 +57,10 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
+/*set page not scrollable horizontally*/
 html,
 body {
-  max-width: 100%;
+  max-width: 100%; /* for ios*/
   overflow-x: hidden;
 }
 
@@ -112,9 +112,6 @@ select {
 
 /*UTILITY CLASSES*/
 
-html {
-  overflow-x: hidden;
-}
 
 body {
   font-family: var(--ff-primary);
