@@ -127,9 +127,9 @@ body {
 
 
 .container {
-  border: 1px solid;
-  width: min(75rem, 90%);
-  /*about 1300px or 90%*/
+ 
+  width: min(75rem, 100%);
+  /*about 1300px or 100%*/
   padding: 0 5rem;
   margin-inline: auto;
   /*centers page for elements with a fixed width like this one*/
@@ -138,8 +138,10 @@ body {
 .hero-background {
   display: flex;
   justify-content: center;
-
+  border: 1px solid black;
   background: url(res/bg_medium23.png);
+ 
+ 
   background-position: center;
   background-repeat: no-repeat;
   padding: 1.7rem;
@@ -156,6 +158,15 @@ body {
   border: 1px solid black;
 }
 
+.welcome-message {
+  padding: 1rem; 
+  text-align: center;
+  font-size: 1.25rem; 
+}
+
+.header-first {
+  font-size: 3rem; 
+}
 
 .nav-menu {
   display: flex;
@@ -164,8 +175,6 @@ body {
 
 .columns {
   border: 1px solid;
-  margin: 5rem auto;
-  width: min(90%, 75rem);
   display: grid;
   grid-auto-flow: row;
   gap: 2em;
