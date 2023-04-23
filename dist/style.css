@@ -108,6 +108,7 @@ select {
 body {
   font-family: var(--ff-primary);
   font-size: 1rem;
+  overflow-x: hidden;
 
 }
 
@@ -127,33 +128,26 @@ body {
 }
 
 .hero-background {
+  display: flex;
+  justify-content: center;
+
   background: url(res/bg_medium2.png);
   background-position: center;
   background-repeat: no-repeat;
-  
-  display: flex;
-  justify-content: center;
-  
   padding: 1.7rem;
 }
 
 .hero-text-container {
-  width: 35rem;
-  background: rgba(255, 255, 255, 0.5);
-  border: 1px solid black;
-  
-
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
+  width: 35rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
 }
 
-.olive {
-  display:flex; 
-  justify-content: space-between;
-}
 
 .nav-menu {
   display: flex;
@@ -168,7 +162,6 @@ body {
   grid-auto-flow: row;
   gap: 2em;
 }
-
 
 
 .firstname {
