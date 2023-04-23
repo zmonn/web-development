@@ -1,0 +1,204 @@
+@font-face {
+  font-family: 'handwritten';
+  src: url('res/cochocib-script-latin-pro.ttf');
+}
+
+@font-face {
+  font-family: 'main';
+  src: url('res/copperplate-light.otf');
+}
+
+
+:root {
+  --clr-primary-800: hsl(154, 100%, 6%);
+  --clr-primary-300: hsl(151, 11%, 49%);
+
+  --clr-light: (hsl(144, 100%, 95%));
+  --clr-medium: (hsl(145, 15%, 74%));
+  --clr-dark: (hsl(138, 4%, 45%));
+
+
+  --ff-special: 'cochocib';
+  --ff-primary: 'main';
+}
+
+
+
+/* NORMALIZING CSS */
+
+*. *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  /*removes sizes from h1,h2 etc*/
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+
+/*UTILITY CLASSES*/
+
+
+body {
+  font-family: var(--ff-primary);
+  font-size: 1rem;
+
+}
+
+.logo-items {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+
+.container {
+  border: 1px solid;
+  width: min(75rem, 90%); /*about 1300px or 90%*/
+  padding: 0 5rem;
+  margin-inline: auto;
+  /*centers page for elements with a fixed width like this one*/
+}
+
+.hero-background {
+  background: url(res/bg_medium2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  
+  padding: 1.7rem;
+}
+
+.hero-text-container {
+  width: 35rem;
+  background: rgba(255, 255, 255, 0.5);
+  border: 1px solid black;
+  
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.olive {
+  display:flex; 
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.columns {
+  border: 1px solid;
+  margin: 5rem auto;
+  width: min(90%, 75rem);
+  display: grid;
+  grid-auto-flow: row;
+  gap: 2em;
+}
+
+
+
+.firstname {
+  font-size: 2rem;
+}
+
+
+.lastname {
+  font-size: 7.2rem;
+  font-family: 'handwritten';
+  font-weight: bold;
+  opacity: 100%;
+}
+
+.ampersand {
+
+  font-family: 'handwritten';
+  font-weight: bold;
+  line-height: 11rem;
+font-size: 14rem;
+  color: white;
+}
+
+
+.padding-top-50 {
+  padding-top: 2rem;
+}
+
+@media (min-width: 44em) {
+  .columns {
+    grid-auto-flow: column;
+  }
+}
